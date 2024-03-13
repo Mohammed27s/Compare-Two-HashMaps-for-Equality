@@ -1,0 +1,35 @@
+
+
+//Compare Two HashMaps for Equality
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class CompareTwoHashMaps {
+
+    public static void main(String[] args){
+
+
+        Map<String, Integer> fristMap = new HashMap<>();
+        fristMap.put("OMR", 3245);
+        fristMap.put("$", 4564);
+
+        Map<String, Integer> secondMap = new HashMap<>();
+        secondMap.put("OMR", 3245);
+        secondMap.put("$", 4564);
+
+
+
+        if(fristMap.equals(secondMap)){
+
+            System.out.println("The have the same elements : "+Boolean.TRUE);
+        }
+        else {
+
+            System.out.println("The don't have the same elements");
+        }
+
+
+    }
+}
+
